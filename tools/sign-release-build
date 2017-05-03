@@ -10,7 +10,7 @@ set -e
 
 ANDROID_TERMINAL_EMULATOR_KEYSTORE="$HOME/Documents/workspace/keystore/jackpal.keystore"
 
-ZIPALIGN="/Users/jack/Library/Android/sdk/build-tools/21.1.2/zipalign"
+ZIPALIGN="/Users/jack/Library/Android/sdk/build-tools/25.0.2/zipalign"
 
 if [ ! -f "$ANDROID_TERMINAL_EMULATOR_KEYSTORE" ]; then
     echo "Release keystore file is missing at ${ANDROID_TERMINAL_EMULATOR_KEYSTORE}. Cannot build release build."
@@ -49,4 +49,3 @@ rm -f Term.apk
 
 echo "Signed-and-aligned APK:"
 echo `pwd`/Term.apk
-
